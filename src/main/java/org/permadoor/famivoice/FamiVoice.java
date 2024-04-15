@@ -134,6 +134,6 @@ public final class FamiVoice extends JavaPlugin implements Listener {
                     }
                 }
             }
-        }.runTaskTimer(this, 1L, 35L);
+        }.runTaskTimer(this, 1L, 80L);
     }
 }
