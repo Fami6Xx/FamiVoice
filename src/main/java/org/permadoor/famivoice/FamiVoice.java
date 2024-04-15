@@ -55,6 +55,7 @@ public final class FamiVoice extends JavaPlugin implements Listener {
     @Override
     public void onDisable() {
         voiceTask.cancel();
+        messageTask.cancel();
     }
 
     @EventHandler
@@ -123,6 +124,6 @@ public final class FamiVoice extends JavaPlugin implements Listener {
                     }
                 }
             }
-        }.runTaskTimer(this, 1L, 1L);
+        }.runTaskTimer(this, 1L, 35L);
     }
 }
