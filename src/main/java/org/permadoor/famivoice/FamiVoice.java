@@ -5,6 +5,7 @@ import com.craftmend.openaudiomc.api.EventApi;
 import com.craftmend.openaudiomc.api.clients.Client;
 import com.craftmend.openaudiomc.api.events.Handler;
 import com.craftmend.openaudiomc.api.events.client.ClientConnectEvent;
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -128,7 +129,7 @@ public final class FamiVoice extends JavaPlugin implements Listener {
                 for (UUID player : players) {
                     Player p = getServer().getPlayer(player);
                     if (p != null) {
-                        p.sendMessage(Objects.requireNonNull(config.getString("connectToVoiceMessage")));
+                        p.sendMessage(ChatColor.translateAlternateColorCodes('&', Objects.requireNonNull(config.getString("connectToVoiceMessage"))));
                     }
                 }
             }
