@@ -1,0 +1,4 @@
+name: FamiVoice
+version: '${project.version}'
+main: org.permadoor.famivoice.FamiVoice
+api-version: '1.20'
